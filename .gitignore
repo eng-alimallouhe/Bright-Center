@@ -1,0 +1,114 @@
+# Ignore .NET build and output directories
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.swp
+*.sln.iml
+*.csproj.user
+*.csproj.*.user
+*.ncrunchsolution
+*.ncrunchproject
+*.dotCover
+*.resharper
+*.resharper.user
+TestResults/
+artifacts/
+publish/
+appsettings.Development.json
+
+# Ignore NuGet packages and restore
+.nuget/
+packages/
+*.nupkg
+NuGet.Config
+NuGet.exe
+project.lock.json
+
+# Ignore Angular build and dependencies
+node_modules/
+dist/
+.tmp/
+.sass-cache/
+bower_components/
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.env
+*.env.local
+*.env.*.local
+*.angular/cache
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore local development files
+*.local
+*.local.*
+.env.local
+.env.*.local
+
+# Ignore Azure and Docker files
+.azure/
+docker-compose.override.yml
+docker-compose.vs.debug.yml
+docker-compose.vs.release.yml
+
+# Ignore logs and diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.pid
+*.pid.lock
+*.seed
+*.seed.lock
+
+# Ignore compiled files
+*.dll
+*.pdb
+*.exe
+*.ilk
+*.cache
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.bak
+*.tmp
+*.temp
+*.orig
+*.rej
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore JetBrains Rider files
+.idea/
+*.sln.iml
+*.csproj.iml
+*.DotSettings
+*.DotSettings.user
