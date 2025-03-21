@@ -24,5 +24,6 @@ namespace BrightCenter.Domain.Entities.UsersManagement
         public virtual ICollection<PrintOrder> PrintOrders { get; set; } = [];
         public virtual ICollection<Payment> Payments { get; set; } = [];
         public virtual ICollection<DeliveryOrder> DeliveryOrders { get; set; } = [];
+        public virtual ICollection<Address> Addresses { get; set; } = [];
     }
 }

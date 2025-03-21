@@ -14,7 +14,7 @@ namespace BrightCenter.Domain.Entities.OrdersManagement
         //Foreign Key: EmployeeId ==> one(Employee)-to-many(PrintOrder) relationship
         public int EmployeeId { get; set; }
 
-        public DateTime DateTime { get; set; }
+        public DateTime Date{ get; set; }
         public Service Service { get; set; } //ENum: SellOrder, RentalOrder, PrintOrder, DeliveryOrder
         public int ServiceId { get; set; } // Foreign key to the specific service table
         public decimal Amount { get; set; }

@@ -10,6 +10,7 @@ namespace BrightCenter.Domain.Entities.EmployeesManagement
         //Foreign Key: EmployeeId ==> one(employee)-to-one(leavebalance) relationship
         public int EmployeeId { get; set; }
         public int RemainBalance { get; set; }
+        public int BaseBalance { get; set; }
         public int TotalBalance { get; set; }
         public int RoundedBalance { get; set; }
         public int Year { get; set; }

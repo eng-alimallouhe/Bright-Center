@@ -17,7 +17,7 @@ namespace BrightCenter.Domain.Entities.StockManagement
         public int AuthorId { get; set; }
         public string ISBN { get; set; } = string.Empty;
         public int Pages { get; set; }
-
+        public decimal RentalCost { get; set; }
         public int PublishedYear { get; set; }
 
         //Navigation Property: many-to-many

@@ -26,6 +26,10 @@ namespace BrightCenter.Domain.Entities.OrdersManagement
         //Soft Delete:
         public bool IsActive { get; set; }
 
+        //Timestamp:    
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
         //Navigation Properties: 
         public virtual Customer? Customer { get; set; }
         public virtual Employee? Employee { get; set; } 
