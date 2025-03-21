@@ -16,6 +16,6 @@ namespace BrightCenter.Domain.Entities.StockManagement
         public int ChangedQuantity { get; set; }
 
         // Navigation property:
-        public virtual Product? Product { get; set; }
+        public Product  Product { get; set; } = new Product();
     }
 }

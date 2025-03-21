@@ -21,6 +21,6 @@
         public DateTime UpdatedAt { get; set; }
 
         // Navigation property:
-        public virtual Supplier? Supplier { get; set; }
+        public Supplier Supplier { get; set; } = new Supplier();
     }
 }

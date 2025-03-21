@@ -16,14 +16,14 @@ namespace BrightCenter.Domain.Entities.UsersManagement
         public decimal Points { get; set; }
 
         //Navigation Property:
-        public virtual User? User { get; set; }
-        public virtual Cart? Cart { get; set; }
-        public virtual Level? Level { get; set; }
-        public virtual ICollection<SellOrder> SellOrders { get; set; } = [];
-        public virtual ICollection<RentalOrder> RentalOrders { get; set; } = [];
-        public virtual ICollection<PrintOrder> PrintOrders { get; set; } = [];
-        public virtual ICollection<Payment> Payments { get; set; } = [];
-        public virtual ICollection<DeliveryOrder> DeliveryOrders { get; set; } = [];
-        public virtual ICollection<Address> Addresses { get; set; } = [];
+        public User User { get; set; } = new User();    
+        public   Cart Cart { get; set; } = new Cart();
+        public   Level Level { get; set; } = new Level();
+        public   ICollection<SellOrder> SellOrders { get; set; } = [];
+        public   ICollection<RentalOrder> RentalOrders { get; set; } = [];
+        public   ICollection<PrintOrder> PrintOrders { get; set; } = [];
+        public   ICollection<Payment> Payments { get; set; } = [];
+        public   ICollection<DeliveryOrder> DeliveryOrders { get; set; } = [];
+        public   ICollection<Address> Addresses { get; set; } = [];
     }
 }

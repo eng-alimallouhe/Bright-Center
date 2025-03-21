@@ -23,9 +23,9 @@ namespace BrightCenter.Domain.Entities.StockManagement
         public DateTime UpdatedAt { get; set; }
 
         // Navigation property:
-        public virtual Category? Category { get; set; }
-        public virtual ICollection<Discount> Discounts { get; set; } = [];
-        public virtual ICollection<InventoryLog> InventoryLogs { get; set; } = [];
-        public virtual ICollection<CartItem> CartItems { get; set; } = [];
+        public Category Category { get; set; } = new Category();
+        public   ICollection<Discount> Discounts { get; set; } = [];
+        public   ICollection<InventoryLog> InventoryLogs { get; set; } = [];
+        public   ICollection<CartItem> CartItems { get; set; } = [];
     }
 }

@@ -21,12 +21,12 @@ namespace BrightCenter.Domain.Entities.StockManagement
         public int PublishedYear { get; set; }
 
         //Navigation Property: many-to-many
-        public virtual ICollection<Publisher> Publishers { get; set; } = [];
+        public   ICollection<Publisher> Publishers { get; set; } = [];
 
         // Navigation property:
-        public virtual Product? Product { get; set; }
-        public virtual Genre? Genre { get; set; }
-        public virtual Author? Author { get; set; }
-        public virtual ICollection<RentalOrder> RentalOrders { get; set; } = [];
+        public   Product  Product { get; set; } = new Product();
+        public Genre Genre { get; set; } = new Genre();
+        public Author Author { get; set; } = new Author();
+        public   ICollection<RentalOrder> RentalOrders { get; set; } = [];
     }
 }

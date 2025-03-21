@@ -26,7 +26,7 @@ namespace BrightCenter.Domain.Entities.OrdersManagement
         public DateTime UpdatedAt { get; set; }
 
         // Navigation property:
-        public virtual SellOrder? SellOrder { get; set; }
-        public virtual Product? Product { get; set; }
+        public SellOrder SellOrder { get; set; } = new SellOrder();
+        public Product Product { get; set; } = new Product();
     }
 }

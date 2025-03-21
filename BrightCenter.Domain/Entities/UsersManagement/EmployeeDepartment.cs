@@ -21,7 +21,7 @@
         public DateTime? EndDate { get; set; }
 
         //Navigation Property:
-        public virtual Employee? Employee { get; set; }
-        public virtual Department? Department { get; set; }
+        public   Employee Employee { get; set; } = new Employee();
+        public   Department Department { get; set; } = new Department();
     }
 }

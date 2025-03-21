@@ -27,6 +27,9 @@ namespace BrightCenter.Infrastructure.Configurations.EmployeesManagement
             builder.Property(a => a.TimeOut)
                     .IsRequired();
 
+            builder.Property(a => a.IsActive)
+                    .HasDefaultValueSql("1");
+
             builder.Property(a => a.IsPresent)
                     .IsRequired(false);
 

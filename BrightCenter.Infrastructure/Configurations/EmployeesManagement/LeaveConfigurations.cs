@@ -27,6 +27,9 @@ namespace BrightCenter.Infrastructure.Configurations.EmployeesManagement
             builder.Property(l => l.IsApproved)
                     .IsRequired();
             
+            builder.Property(l => l.IsActive)
+                    .HasDefaultValueSql("1");
+
             builder.Property(l => l.IsPaid)
                     .IsRequired();
             

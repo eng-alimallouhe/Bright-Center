@@ -16,6 +16,6 @@ namespace BrightCenter.Domain.Entities.EmployeesManagement
         public int Year { get; set; }
 
         //Navigation Property:
-        public virtual Employee? Employee { get; set; }
+        public Employee Employee { get; set; } = new Employee();
     }
 }

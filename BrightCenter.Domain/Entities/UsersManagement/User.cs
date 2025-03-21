@@ -26,6 +26,6 @@
         public DateTime LastLogIn { get; set; }
         
         //Navigation Property:
-        public virtual Role? Role { get; set; }
+        public  Role Role { get; set; } = new Role();
     }
 }

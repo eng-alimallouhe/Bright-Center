@@ -16,6 +16,6 @@
         public DateTime UpdatedAt { get; set; }
 
         //Navigation Property:
-        public virtual ICollection<EmployeeDepartment> EmployeeDepartments { get; set; } = [];
+        public ICollection<EmployeeDepartment> EmployeeDepartments { get; set; } = [];
     }
 }

@@ -19,6 +19,9 @@ namespace BrightCenter.Infrastructure.Configurations.EmployeesManagement
                     .HasColumnType("decimal(5,2)")
                     .IsRequired();
 
+            builder.Property(i => i.IsActive)
+                    .HasDefaultValueSql("1");
+
             builder.Property(i => i.Date)
                     .IsRequired();
 

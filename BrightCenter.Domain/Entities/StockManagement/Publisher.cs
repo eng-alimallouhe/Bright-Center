@@ -16,6 +16,6 @@
         public DateTime UpdatedAt { get; set; }
 
         // Navigation property:
-        public virtual ICollection<Book> Books { get; set; } = [];
+        public ICollection<Book> Books { get; set; } = [];
     }
 }

@@ -22,7 +22,7 @@ namespace BrightCenter.Domain.Entities.OrdersManagement
         public DateTime UpdatedAt { get; set; }
         
         // Navigation property:
-        public Cart? Cart { get; set; }
-        public Product? Product { get; set; }
+        public Cart Cart { get; set; } = new Cart();
+        public Product Product { get; set; } = new Product();
     }
 }

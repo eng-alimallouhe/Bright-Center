@@ -31,7 +31,7 @@ namespace BrightCenter.Domain.Entities.OrdersManagement
         public DateTime UpdatedAt { get; set; }
 
         //Navigation Properties: 
-        public virtual Customer? Customer { get; set; }
-        public virtual Employee? Employee { get; set; } 
+        public Customer Customer { get; set; } = new Customer();
+        public Employee Employee { get; set; } = new Employee(); 
     }
 }

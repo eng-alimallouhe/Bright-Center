@@ -27,6 +27,7 @@ namespace BrightCenter.Infrastructure.Configurations.EmployeesManagement
             builder.Property(lb => lb.RoundedBalance)
                     .IsRequired();
 
+
             builder.Property(lb => lb.Year)
                     .IsRequired();
 

@@ -14,6 +14,6 @@
         public bool IsActive { get; set; }
 
         // Navigation property:
-        public virtual ICollection<Product> Products { get; set; } = [];
+        public ICollection<Product> Products { get; set; } = [];
     }
 }

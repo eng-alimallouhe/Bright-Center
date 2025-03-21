@@ -15,18 +15,18 @@ namespace BrightCenter.Domain.Entities.UsersManagement
         public decimal BaseSalary { get; set; }
 
         //Navigation Property:
-        public virtual User? User { get; set; }
-        public virtual ICollection<EmployeeDepartment> EmployeeDepartments { get; set; } = [];
-        public virtual ICollection<Attendance> Attendances { get; set; } = [];
-        public virtual ICollection<Leave> Leaves { get; set; } = [];
-        public virtual ICollection<Salary> Salaries { get; set; } = [];
-        public virtual ICollection<LeaveBalance> LeaveBalances { get; set; } = [];
-        public virtual ICollection<Incentive> Incentives { get; set; } = [];
-        public virtual ICollection<Penalty> Penalties { get; set; } = [];
-        public virtual ICollection<SellOrder>? SellOrders { get; set; } = [];
-        public virtual ICollection<RentalOrder>? RentalOrders { get; set; } = [];
-        public virtual ICollection<PrintOrder>? PrintOrders { get; set; } = [];
-        public virtual ICollection<Payment>? Payments { get; set; } = [];
-        public virtual ICollection<DeliveryOrder>? DeliveryOrders { get; set; } = [];
+        public  User? User { get; set; }
+        public   ICollection<EmployeeDepartment> EmployeeDepartments { get; set; } = [];
+        public   ICollection<Attendance> Attendances { get; set; } = [];
+        public   ICollection<Leave> Leaves { get; set; } = [];
+        public   ICollection<Salary> Salaries { get; set; } = [];
+        public   ICollection<LeaveBalance> LeaveBalances { get; set; } = [];
+        public   ICollection<Incentive> Incentives { get; set; } = [];
+        public   ICollection<Penalty> Penalties { get; set; } = [];
+        public   ICollection<SellOrder>? SellOrders { get; set; } = [];
+        public   ICollection<RentalOrder>? RentalOrders { get; set; } = [];
+        public   ICollection<PrintOrder>? PrintOrders { get; set; } = [];
+        public   ICollection<Payment>? Payments { get; set; } = [];
+        public   ICollection<DeliveryOrder>? DeliveryOrders { get; set; } = [];
     }
 }

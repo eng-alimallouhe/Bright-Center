@@ -18,6 +18,6 @@
         public DateTime UpdatedAt { get; set; }
 
         //Navigation Property:
-        public virtual ICollection<User> Users { get; set; } = [];
+        public ICollection<User> Users { get; set; } = [];
     }
 }
