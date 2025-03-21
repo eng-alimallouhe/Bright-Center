@@ -1,0 +1,21 @@
+﻿namespace BrightCenter.Domain.Entities.StockManagement
+{
+    public class Author
+    {
+        // Primary key:
+        public int AuthorId { get; set; }
+
+        public string AuthorName { get; set; } = string.Empty;
+        public string AuthorDescription { get; set; } = string.Empty;
+
+        //soft delete
+        public bool IsActive { get; set; }
+
+        //Timestamp:
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
+        // Navigation property:
+        public virtual ICollection<Book> Books { get; set; } = [];
+    }
+}
