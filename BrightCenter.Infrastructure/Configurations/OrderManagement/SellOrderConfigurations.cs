@@ -38,7 +38,7 @@ namespace BrightCenter.Infrastructure.Configurations.OrderManagement
                     .IsRequired();
 
             builder.Property(so => so.IsActive)
-                    .HasDefaultValue(true);
+                    .HasDefaultValueSql("1");
 
             builder.Property(so => so.CreatedAt)
                     .HasDefaultValueSql("GETDATE()");
@@ -48,11 +48,13 @@ namespace BrightCenter.Infrastructure.Configurations.OrderManagement
 
             builder.HasOne(so => so.Customer)
                 .WithMany(c => c.SellOrders)
-                .HasForeignKey(so => so.CustomerId);
+                .HasForeignKey(so => so.CustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(so => so.Employee)
                 .WithMany(e => e.SellOrders)
-                .HasForeignKey(so => so.EmployeeId);
+                .HasForeignKey(so => so.EmployeeId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
     }

@@ -15,6 +15,9 @@ namespace BrightCenter.Domain.Entities.EmployeesManagement
         public string Reason { get; set; } = string.Empty;
         public DateTime Date { get; set; }
 
+        //Soft delete
+        public bool IsActive { get; set; }
+
         //Navigation Property:
         public virtual Employee? Employee { get; set; }
     }

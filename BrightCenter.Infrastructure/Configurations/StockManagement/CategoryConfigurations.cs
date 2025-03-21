@@ -23,7 +23,7 @@ namespace BrightCenter.Infrastructure.Configurations.StockManagement
                     .HasMaxLength(255);
 
             builder.Property(c => c.IsActive)
-                    .HasDefaultValue(true);
+                    .HasDefaultValueSql("1");
 
             builder.Property(c => c.CreatedAt)
                     .HasDefaultValueSql("GETDATE()");

@@ -28,7 +28,7 @@ namespace BrightCenter.Infrastructure.Configurations.OrderManagement
                     .HasColumnType("decimal(7, 2)");
             
             builder.Property(oi => oi.IsActive)
-                    .HasDefaultValue(true);
+                    .HasDefaultValueSql("1");
             
             builder.Property(oi => oi.CreatedAt)
                     .HasDefaultValueSql("GETDATE()");

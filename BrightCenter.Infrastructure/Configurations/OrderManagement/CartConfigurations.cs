@@ -16,7 +16,7 @@ namespace BrightCenter.Infrastructure.Configurations.OrderManagement
                     .ValueGeneratedOnAdd();
 
             builder.Property(c => c.IsCheckedOut)
-                    .HasDefaultValue(false);
+                    .HasDefaultValueSql("0");
 
             builder.Property(c => c.CreatedAt)
                     .HasDefaultValueSql("GETDATE()");

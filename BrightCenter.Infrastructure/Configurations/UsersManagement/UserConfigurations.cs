@@ -41,10 +41,10 @@ namespace BrightCenter.Infrastructure.Configurations.UsersManagement
                     .HasMaxLength(60);
 
             builder.Property(u => u.IsLocked)
-                    .HasDefaultValue(false);
+                    .HasDefaultValueSql("0");
 
             builder.Property(u => u.IsDeleted)
-                    .HasDefaultValue(false);
+                    .HasDefaultValueSql("0");
 
             builder.Property(u => u.CreatedAt)
                    .HasDefaultValueSql("GETDATE()");

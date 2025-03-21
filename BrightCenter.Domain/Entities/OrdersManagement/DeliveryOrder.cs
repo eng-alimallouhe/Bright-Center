@@ -14,7 +14,7 @@ namespace BrightCenter.Domain.Entities.OrdersManagement
         public int EmployeeId{ get; set; }
 
         //Foreign Key: AddressId ==> one(Address)-to-one(PrintOrder) relationship
-        public int AddressId { get; set; }
+        public int? AddressId { get; set; }
 
         public string OrderName { get; set; } = string.Empty;
         public string Department { get; set; } = string.Empty;

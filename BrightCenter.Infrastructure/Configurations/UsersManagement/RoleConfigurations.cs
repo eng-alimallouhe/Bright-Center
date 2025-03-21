@@ -19,7 +19,7 @@ namespace BrightCenter.Infrastructure.Configurations.UsersManagement
                     .HasMaxLength(50);
             
             builder.Property(r => r.IsActive)
-                    .HasDefaultValue(true);
+                    .HasDefaultValueSql("1");
 
             builder.Property(r => r.CreatedAt)
                     .HasDefaultValueSql("GETDATE()");

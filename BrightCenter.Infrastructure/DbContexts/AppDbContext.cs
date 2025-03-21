@@ -52,7 +52,14 @@ namespace BrightCenter.Infrastructure.DbContexts
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
 
+            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;" +
+                                        "Database=BrightCenter;" +
+                                        "Trusted_Connection=True;");
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

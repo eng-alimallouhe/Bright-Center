@@ -25,7 +25,7 @@ namespace BrightCenter.Infrastructure.Configurations.StockManagement
                     .IsRequired();
             
             builder.Property(d => d.IsActive)
-                    .HasDefaultValue(true);
+                    .HasDefaultValueSql("1");
             
             builder.Property(d => d.CreatedAt)
                     .HasDefaultValueSql("GETDATE()");

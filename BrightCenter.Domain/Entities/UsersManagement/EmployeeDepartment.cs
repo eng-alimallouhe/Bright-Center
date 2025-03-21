@@ -18,7 +18,7 @@
 
         //Timestamp:
         public DateTime StartDate { get; set; } 
-        public DateTime EndDate { get; set; }
+        public DateTime? EndDate { get; set; }
 
         //Navigation Property:
         public virtual Employee? Employee { get; set; }

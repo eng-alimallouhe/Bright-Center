@@ -10,6 +10,9 @@
         public decimal DiscountPercentage { get; set; }
         public string LevelDescription { get; set; } = string.Empty;
 
+        //Soft Delete:
+        public bool IsActive { get; set; }
+
         //Timestamp:
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

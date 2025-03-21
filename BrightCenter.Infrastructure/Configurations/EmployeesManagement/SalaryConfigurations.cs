@@ -26,7 +26,7 @@ namespace BrightCenter.Infrastructure.Configurations.EmployeesManagement
                     .IsRequired();
 
             builder.Property(s => s.IsActive)
-                    .IsRequired();
+                    .HasDefaultValueSql("1");
 
             builder.HasOne(s => s.Employee)
                 .WithMany(e => e.Salaries)

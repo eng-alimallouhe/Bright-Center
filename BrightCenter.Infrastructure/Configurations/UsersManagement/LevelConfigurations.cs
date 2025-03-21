@@ -25,6 +25,9 @@ namespace BrightCenter.Infrastructure.Configurations.UsersManagement
                     .HasColumnType("Decimal(5,2)")
                     .IsRequired();
             
+            builder.Property(l => l.IsActive)
+                    .HasDefaultValueSql("1");
+
             builder.Property(l => l.LevelDescription)
                     .IsRequired()
                     .HasMaxLength(255);

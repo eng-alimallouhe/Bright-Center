@@ -19,9 +19,17 @@ namespace BrightCenter.Infrastructure.Configurations.EmployeesManagement
                     .HasColumnType("decimal(5,2)")
                     .IsRequired();
             
+            builder.Property(p => p.Reason)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
             builder.Property(p => p.Date)
                     .IsRequired();
             
+            builder.Property(p => p.IsActive)
+                    .HasDefaultValueSql("1");
+
+
             builder.HasOne(p => p.Employee)
                 .WithMany(e => e.Penalties)
                 .HasForeignKey(p => p.EmployeeId)
