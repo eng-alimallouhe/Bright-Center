@@ -1,5 +1,5 @@
 ﻿using BrightCenter.Infrastructure.DbContexts;
-using BrightCenter.Infrastructure.Interfaces;
+using BrightCenter.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 

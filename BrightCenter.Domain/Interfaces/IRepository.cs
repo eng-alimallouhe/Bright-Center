@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace BrightCenter.Infrastructure.Interfaces
+namespace BrightCenter.Domain.Interfaces
 {
     public interface IRepository<TEntity> where TEntity : class
     {
