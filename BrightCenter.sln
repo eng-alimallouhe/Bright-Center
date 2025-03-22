@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrightCenter.Domain", "Brig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrightCenter.Infrastructure", "BrightCenter.Infrastructure\BrightCenter.Infrastructure.csproj", "{2A2601BE-6813-4FA1-9DC2-C9A5F6F16ECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D72C2E2A-4E36-43CE-A997-2620A82BE965}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{A0E090CD-CCA9-49D8-BB5D-83FABE5233E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{2A2601BE-6813-4FA1-9DC2-C9A5F6F16ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A2601BE-6813-4FA1-9DC2-C9A5F6F16ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A2601BE-6813-4FA1-9DC2-C9A5F6F16ECA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D72C2E2A-4E36-43CE-A997-2620A82BE965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D72C2E2A-4E36-43CE-A997-2620A82BE965}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D72C2E2A-4E36-43CE-A997-2620A82BE965}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D72C2E2A-4E36-43CE-A997-2620A82BE965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E090CD-CCA9-49D8-BB5D-83FABE5233E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E090CD-CCA9-49D8-BB5D-83FABE5233E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E090CD-CCA9-49D8-BB5D-83FABE5233E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E090CD-CCA9-49D8-BB5D-83FABE5233E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

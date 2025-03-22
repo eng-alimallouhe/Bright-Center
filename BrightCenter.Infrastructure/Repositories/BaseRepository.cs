@@ -31,9 +31,10 @@ namespace BrightCenter.Infrastructure.Repositories
         {
             _dbSet.Update(entity);
         }
-        public Task<TEntity> AddAsync(TEntity entity)
+        public async Task<TEntity> AddAsync(TEntity entity)
         {
-            throw new NotImplementedException();
+            await _dbSet.AddAsync(entity).AsTask();
+            return entity;
         }
 
         public abstract Task DeleteAsync(int id);
